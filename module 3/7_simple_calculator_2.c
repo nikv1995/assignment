@@ -3,7 +3,7 @@ int main()
 {
     float num1,num2;
     char op;
-    printf("enter the operator from (+,-,*,/)");
+    printf("enter the operator from (+,-,*,/,%%)");
     scanf("%c",&op);
     printf("enter the num1");
     scanf("%f",&num1);
@@ -29,6 +29,11 @@ int main()
         case '/':
         {
             printf(" %.1f / %.1f = %.1f", num1, num2, num1/num2);
+            break;
+        }
+        case '%':
+        {
+            printf(" %d %% %d = %d", (int)num1, (int)num2, (int)num1/(int)num2);
             break;
         }
         default:
